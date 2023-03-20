@@ -1,0 +1,35 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "pwa-node",
+            "request": "launch",
+            "name": "mainnet-infura",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/bot/index.js",
+            "env":{"NODE_ENV": "mainnet","PROVIDER_TYPE":"infura"}
+        },
+        {
+            "type": "pwa-node",
+            "request": "launch",
+            "name": "mainnet-localNode",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/bot/index.js",
+            "env":{"NODE_ENV": "mainnet","PROVIDER_TYPE":"local"}
+        },
+        {
+            "type": "pwa-node",
+            "request": "launch",
+            "name": "goerli-infura",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/bot/index.js",
+            "env":{"NODE_ENV": "goerli","PROVIDER_TYPE":"infura"}
+        }
+    ]
+}
